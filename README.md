@@ -28,11 +28,12 @@ The maze has the following rules:
 
 The layout is as follows: 
 - main calls Exec. Exec interacts with the command line and calls functions like readingMaze() and goingThroughMazer().
-- The maze is read with functions the MazeReader class which allocates and deallocates space for the maze.
+- The maze is read with functions defined in the MazeReader class which allocates, populates, and deallocates space for the maze.
 - The maze is traversed with functions written in the MazeWalker class.
 
 The algorithm uses a dummy maze to keep track of the places the maze walker has visited. 
 With backtracking and recursion, algroithm moves the maze walker along a path, moving to spaces marked P and manipulating the dummy maze, until the exit is found. 
+If the exit is found, the dummy maze is return as it keeps track of the visited spaces.
 If no exit is found, an error is thrown.
 
 
