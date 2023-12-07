@@ -1,6 +1,6 @@
 # MazeWalker
 
-Solve a text-based maze. in C++. You are given a maze and a start position. The goal is to traverse the maze until you find the exit. 
+Solve a text-based maze in C++. You are given a maze and a start position. The goal is to traverse the maze until you find the exit. 
 
 ## Input
 
@@ -32,7 +32,7 @@ The layout is as follows:
 - The maze is traversed with functions written in the MazeWalker class.
 
 The algorithm uses a dummy maze to keep track of the places the maze walker has visited. 
-With backtracking and recursion, algroithm moves the maze walker along a path, marking the dummy maze, until the exit is found. 
+With backtracking and recursion, algroithm moves the maze walker along a path, moving to spaces marked P and manipulating the dummy maze, until the exit is found. 
 If no exit is found, an error is thrown.
 
 
